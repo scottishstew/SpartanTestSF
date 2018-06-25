@@ -1,0 +1,121 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+#txtSearchItemNo {
+    width: 85%;
+    height: 50px;
+}
+
+.btnSearchSubmit {
+    margin-right: 10px;
+    float: right;
+}
+
+input {
+    border: 0;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+#txtSearchUnitNo {
+    width: 85%;
+    height: 50px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+#dvResults p {
+    font-weight:bold;
+    color:white;
+}
+
+.txtUnitNo {
+    font-weight:bold;
+}
+#dvResults {
+    width: 100%;
+    background: #333;
+}
+
+#UnitNoTab {
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-top:1px;
+    border-style: solid;
+}
+
+#ItemNoTab {
+    border-left: 1px;
+    border-right: 1px;
+    border-bottom: 1px;
+    border-top: 1px;
+    border-style: solid;
+}
+
+
+.imgArrow {
+    width: 32px;
+    height: 32px;
+    float: right;
+}
+
+
+#tabs, #tabs2, #tabs3, #tabs4, #tabs5 {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#tabs li, #tabs2 li, #tabs3 li, #tabs4 li, #tabs5 li {
+     float: left;
+}
+
+#tabs li a, #tabs2 li a, #tabs3 li a, #tabs4 li a, #tabs5 li a {
+     display: block;
+     padding-bottom: 17px;
+     padding-top: 17px;
+     text-decoration: none;
+     text-align: center;
+}
+
+.tabLink{
+    color: #333;
+}
+
+.tabLinkSelected {
+    color: #fff;
+}
+
+.tabcontainer {
+    padding-top: 80px;
+}
+
+li {
+    list-style-type: none;
+    width: 50%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.tab_active {
+    font-weight: bold;
+    background: #f00 !important;
+    color: #fff !important;
+}
+
+.clear {
+    display: block;
+    clear: both;
+}

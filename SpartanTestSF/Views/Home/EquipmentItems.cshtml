@@ -1,0 +1,22 @@
+﻿@model SpartanTestSF.Models.HomeModel
+
+<div id="dvResults">
+    <p>Results</p>
+</div>
+
+<table style="width:100%;" id="tblEquipmentItems">
+    @foreach (var equipmentItem in Model.EquipmentItems.SerialisedEquipment)
+    {
+        <tr>
+            <td>
+              
+                <img src="~/Images/arrow.png" class="imgArrow" />
+                <span class="txtUnitNo">@equipmentItem.ExternalId</span> <br/>
+                @equipmentItem.EquipmentType.ExternalId <br />
+                @equipmentItem.EquipmentType.Description <br /><br />
+            </td>
+            
+        </tr>
+    }
+   
+  </table>

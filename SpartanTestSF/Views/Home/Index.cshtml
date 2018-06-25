@@ -1,0 +1,27 @@
+﻿@model SpartanTestSF.Models.HomeModel
+
+
+<div id="tabs">
+    <ul>
+        <li id="lnkUnitNo"><a id="hlUnitNo" class="tabLink" href="#">Unit No</a></li>
+        <li id="lnkItemNo" ><a id="hlItemNo" class="tabLink" href="#">Item No</a></li>
+        </ul>
+        <div id="UnitNoTab">
+            <div class="tabcontainer">
+                @Html.TextBox("txtSearchUnitNo", null, new { @placeholder = "Enter The Unit Number Search Term" })
+                <input class="btnSearchSubmit" type="image" src="~/Images/mg.png" id="btnSearchUnitNo" />
+            </div>
+     </div>
+
+    <div id="ItemNoTab">
+        <div  class="tabcontainer">
+            @Html.TextBox("txtSearchItemNo", null, new { @placeholder = "Enter The Item Number Search Term" })
+            <input class="btnSearchSubmit" type="image" src="~/Images/mg.png" id="btnSearchItemNo" />
+
+        </div>
+    </div>
+</div>
+    @Html.Partial("EquipmentItems")
+
+
+<script src="~/Scripts/common.js"></script>
