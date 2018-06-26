@@ -17,6 +17,10 @@ input {
     border: 0;
 }
 
+table {
+    background: #f6f6f6;
+}
+
 textarea:focus, input:focus {
     outline: none;
 }
@@ -32,9 +36,9 @@ textarea:focus, input:focus {
 }
 
 
-#dvResults p {
-    font-weight:bold;
-    color:white;
+#dvResults span {
+    font-weight: bold;
+    color: white;
 }
 
 .txtUnitNo {
@@ -42,7 +46,7 @@ textarea:focus, input:focus {
 }
 #dvResults {
     width: 100%;
-    background: #333;
+    background: #303030;
 }
 
 #UnitNoTab {
@@ -66,6 +70,7 @@ textarea:focus, input:focus {
     width: 32px;
     height: 32px;
     float: right;
+    margin-top:25px;
 }
 
 

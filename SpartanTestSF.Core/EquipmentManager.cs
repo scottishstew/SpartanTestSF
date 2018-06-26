@@ -49,7 +49,7 @@ namespace SpartanTestSF.Core
                 }
                 return retvar;
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
             }
@@ -64,8 +64,11 @@ namespace SpartanTestSF.Core
         {
             List<SerialisedEquipment> retvar = new List<SerialisedEquipment>();
 
-            //query by unit no
-            retvar = AllEquipmentItems.SerialisedEquipment.Where(i => i.ExternalId == unitNo).ToList();
+            if (AllEquipmentItems.SerialisedEquipment != null)
+            {
+                //query by unit no
+                retvar = AllEquipmentItems.SerialisedEquipment.Where(i => i.ExternalId == unitNo).ToList();
+            }
 
             return retvar;
 
@@ -80,8 +83,11 @@ namespace SpartanTestSF.Core
         {
             List<SerialisedEquipment> retvar = new List<SerialisedEquipment>();
 
-            //query by item no
-            retvar = AllEquipmentItems.SerialisedEquipment.Where(i => i.EquipmentType.ExternalId == itemNo).ToList();
+            if (AllEquipmentItems.SerialisedEquipment != null)
+            {
+                //query by item no
+                retvar = AllEquipmentItems.SerialisedEquipment.Where(i => i.EquipmentType.ExternalId == itemNo).ToList();
+            }
 
             return retvar;
 

@@ -3,3 +3,13 @@
 ################################################################################
 
 /packages
+/SpartanTestSF/bin
+/SpartanTestSF/obj/Debug
+/SpartanTestSF.Core/bin/Debug/netstandard2.0
+/SpartanTestSF.Core/obj/Debug/netstandard2.0
+/SpartanTestSF.Core/obj
+/SpartanTestSF.BusinessObjects/bin/Debug/netstandard2.0
+/SpartanTestSF.BusinessObjects/obj/Debug/netstandard2.0
+/.vs/SpartanTestSF/v15
+/.vs/config
+/SpartanTestSF.BusinessObjects/obj
