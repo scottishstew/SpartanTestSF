@@ -14,11 +14,19 @@ namespace SpartanTestSF
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{action}/{value}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+
+            config.Routes.MapHttpRoute(
+            name: "AllEquipment",
+            routeTemplate: "api/{controller}/{action}",
+            defaults: new { id = RouteParameter.Optional }
+        );
         }
     }
 }
