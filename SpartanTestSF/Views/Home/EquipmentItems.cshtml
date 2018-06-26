@@ -1,7 +1,7 @@
 ﻿@model SpartanTestSF.Models.HomeModel
 
 <div id="dvResults">
-    <span>Results</span>
+    <span id="spnResults">Results</span>
     <a id="lnkReset" href="#">Reset</a>
 </div>
 
@@ -10,11 +10,12 @@
     {
         <tr>
             <td>
-              
-                <img src="~/Images/arrow.png" class="imgArrow" />
-                <span class="txtUnitNo">@equipmentItem.ExternalId</span> <br/>
-                @equipmentItem.EquipmentType.ExternalId <br />
-                @equipmentItem.EquipmentType.Description <br /><br />
+                <div class="eqItem">
+                    <img src="~/Images/arrow.png" class="imgArrow" />
+                    <span class="txtUnitNo">@equipmentItem.ExternalId</span> <br />
+                    @equipmentItem.EquipmentType.ExternalId <br />
+                    @equipmentItem.EquipmentType.Description <br /><br />
+                </div>
             </td>
             
         </tr>

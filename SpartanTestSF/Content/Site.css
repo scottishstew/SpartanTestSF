@@ -57,6 +57,16 @@ textarea:focus, input:focus {
     border-style: solid;
 }
 
+.eqItem {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+td {
+    background-image: url('../Images/greyline.png');
+    background-repeat: repeat-y;
+}
+
 #ItemNoTab {
     border-left: 1px;
     border-right: 1px;

@@ -112,6 +112,7 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\arrow.png" />
+    <Content Include="Images\greyline.png" />
     <Content Include="Images\mg.png" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />

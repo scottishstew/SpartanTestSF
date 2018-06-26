@@ -88,6 +88,6 @@ function DoSearch(searchType, value) {
 
 function PopulateTable(equipmentItem) {
     //adding new row to equipment table
-    $('#tblEquipmentItems').append("<tr><td><img src='/Images/arrow.png' class='imgArrow' /><span class='txtUnitNo'>" + equipmentItem.ExternalId + "</span><br/> " + equipmentItem.EquipmentType.ExternalId + " <br />" + equipmentItem.EquipmentType.Description + " <br /><br /></td></tr>");
+    $('#tblEquipmentItems').append("<tr><td><div class='eqItem'><img src='/Images/arrow.png' class='imgArrow' /><span class='txtUnitNo'>" + equipmentItem.ExternalId + "</span><br/> " + equipmentItem.EquipmentType.ExternalId + " <br />" + equipmentItem.EquipmentType.Description + " <br /><br /></div></td></tr>");
 
 }
