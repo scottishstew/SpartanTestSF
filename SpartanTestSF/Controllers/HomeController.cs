@@ -23,7 +23,12 @@ namespace SpartanTestSF.Controllers
             string path = Path.Combine(Server.MapPath("~/Content"), "EquipmentData.json");
             string json = System.IO.File.ReadAllText(path);
 
-            myModel.EquipmentItems = SpartanTestSF.Core.EquipmentManager.GetAllEquipmentItems(json);
+            //create list of equipment objects using JSON file
+            SpartanTestSF.Core.EquipmentManager.PopulateEquipmentItems(json);
+
+            //add equipment objects to model and pass it to view
+            myModel.EquipmentItems = SpartanTestSF.Core.EquipmentManager.GetAllEquipmentItems();
+
             return View(myModel);
         }
     }

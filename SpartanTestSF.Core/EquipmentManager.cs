@@ -16,12 +16,15 @@ namespace SpartanTestSF.Core
         /// </summary>
         /// <param name="json"></param>
         /// <returns></returns>
-        public static EquipmentList GetAllEquipmentItems(string json)
+        public static void PopulateEquipmentItems(string json)
         {
             //take in JSON data and convert to objects
             AllEquipmentItems = DeSerializeJSON(json);
-            return AllEquipmentItems;
+        }
 
+        public static EquipmentList GetAllEquipmentItems()
+        {
+            return AllEquipmentItems;
         }
 
         /// <summary>

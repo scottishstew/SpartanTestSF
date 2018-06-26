@@ -65,6 +65,15 @@ textarea:focus, input:focus {
     border-style: solid;
 }
 
+#lnkReset{
+    float:right;
+    color:#fff;
+    margin-right:10px;
+    font-weight:bold;
+}
+#lnkReset:hover {
+text-decoration:underline;
+}
 
 .imgArrow {
     width: 32px;

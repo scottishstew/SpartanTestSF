@@ -18,9 +18,20 @@ namespace SpartanTestSF.Controllers
         /// <returns></returns>
         public List<SerialisedEquipment> GetEquipmentByUnitNo(string value)
         {
-            List<SerialisedEquipment> equipmentItems = SpartanTestSF.Core.EquipmentManager.GetEquipmentItemsByUnitNo(value);
+            List<SerialisedEquipment> retvar = SpartanTestSF.Core.EquipmentManager.GetEquipmentItemsByUnitNo(value);
 
-            return equipmentItems;
+            return retvar;
+        }
+
+        /// <summary>
+        /// Web API to get all equipment
+        /// </summary>
+        /// <returns></returns>
+        public List<SerialisedEquipment> GetAllEquipment()
+        {
+           EquipmentList equipmentItems = SpartanTestSF.Core.EquipmentManager.GetAllEquipmentItems();
+           List<SerialisedEquipment> retvar = equipmentItems.SerialisedEquipment;
+           return retvar;
         }
 
         /// <summary>
@@ -30,8 +41,8 @@ namespace SpartanTestSF.Controllers
         /// <returns></returns>
         public List<SerialisedEquipment> GetEquipmentByItemNo(string value)
         {
-            List<SerialisedEquipment> equipmentItems = SpartanTestSF.Core.EquipmentManager.GetEquipmentItemsByItemNo(value);
-            return equipmentItems;
+            List<SerialisedEquipment> retvar = SpartanTestSF.Core.EquipmentManager.GetEquipmentItemsByItemNo(value);
+            return retvar;
         }
 
     }

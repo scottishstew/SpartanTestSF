@@ -1,4 +1,7 @@
 ﻿
+$('#lnkReset').click(function () {
+    DoSearch("GetAll", "");
+})
 
 
 $('#lnkUnitNo').click(function () {
@@ -48,10 +51,16 @@ $('#btnSearchItemNo').click(function () {
 function DoSearch(searchType, value) {
 
     if (searchType == "UnitNo") {
+        //search by unit number web api URL
         var webAPIURL = '/api/WebAPI/GetEquipmentByUnitNo/' + value;
     }
-    else {
+    else if (searchType == "ItemNo") {
+        //search by item number web api URL
         var webAPIURL = '/api/WebAPI/GetEquipmentByItemNo/' + value;
+    }
+    else {
+        //get all equipment web api URL
+        var webAPIURL = '/api/WebAPI/GetAllEquipment';
     }
 
     //ajax request to perform equipment search and return the relevant results
